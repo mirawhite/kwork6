@@ -1,0 +1,935 @@
+html, body {
+    font-family: Commissioner, sans-serif;
+    color: #000000;
+    letter-spacing: -0.015em;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.burger {
+    display: none;
+}
+
+.container {
+    max-width: 1512px;
+    padding: 0 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* ====================================HEADER========================================= */
+
+.header__logo-special {
+    display: none;
+}
+
+.header__inner {
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo span {
+    display: block;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 31px;
+    margin: 29px 539px 28px 0px;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px 0px 33px;
+}
+
+.header__nav-item {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    transition: all 1.3s;
+    white-space: nowrap;
+}
+
+.header__nav-item:hover {
+    color: #18A0FB;
+    transition: all 0.3s;
+}
+
+.header__nav-item:last-child {
+    margin-right: 67px;
+}
+
+.header__button {
+    background: #18A0FB;
+    border-radius: 6px;
+    padding: 10px 15px 10px 15px;
+    margin: 24px 0px;
+    transition: all 1.3s;
+    white-space: nowrap;
+    max-width: 128px;
+}
+
+.header__button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.header__btn {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+/* ====================================MAIN========================================= */
+/* ====================================TOUR========================================= */
+
+.tour__inner {
+    padding: 0px 90px 0px 91px;
+    margin: 80px 0px 107px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour__heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 51px;
+    text-align: center;
+}
+
+.tour__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour__title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 19px;
+}
+
+.tour__par {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 655px;
+    margin: 0px 66px 68px 0px;
+}
+
+.tour__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tour__form-cols {
+    justify-content: space-between;
+    display: flex;
+}
+
+.tour__form-col {
+    margin-right: 50px;
+}
+
+.tour__form-col:last-child {
+    margin-right: 66px;
+    position: relative;
+}
+
+.tour__form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 27px;
+}
+
+.tour__form-input, .tour__form-text {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    width: 288px;
+    padding: 13px 15px;
+}
+
+.tour__form-input {
+    height: 52px;
+}
+
+.tour__form-input--date {
+    width: 259px;
+}
+
+.tour__form-input--date::after {
+    content: "";
+    background: url("../images/icons/calendar.svg") 0 0 / 100% no-repeat;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 37px;
+    height: 40px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.tour__form-text {
+    height: 172px;
+    width: 317px;
+}
+
+.tour__btn {
+    display: inline-block;
+    padding: 15.3px 27.78px 15.7px 27.22px;
+    background-color: #18A0FB;
+    margin-top: 53px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    border-radius: 6px;
+    width: 192px;
+}
+
+
+.tour__line {
+    width: 0;
+    height: 713px;
+    border: 0.5px solid #000000;
+    margin-right: 67px;
+    align-self: flex-end;
+}
+
+.tour__line-rotate {
+    display: none;
+    width: 100%;
+    height: 0;
+    border: 0.5px solid #000000;
+}
+
+.tour__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tour__icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.tour__icon-photo {
+    margin-bottom: 25px;
+}
+
+.tour__icon-text {
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+.tour__desc {}
+
+.tour__text {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 543px;
+    margin-top: 13px;
+}
+
+/* ====================================FOOTER========================================= */
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__text {
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col:first-child {
+    margin-right: 50px;
+}
+
+.footer__col:nth-child(2) {
+    margin-right: 51px;
+}
+
+.footer__col:nth-child(3) {
+    margin-right: 47px;
+}
+
+.footer__col:nth-child(4) {
+    margin-right: 297px;
+}
+
+.footer__col:last-child {
+    justify-content: flex-start;
+}
+
+.footer__heading {
+    display: block;
+    margin-bottom: 76px;
+    transition: all 1.3s;
+    white-space: nowrap;
+}
+
+/* при наведении на ссылки цвет ссылок меняется */
+.footer__heading:hover {
+    color: #18A0FB;
+    transition: all 0.3s;
+}
+
+.footer__heading:last-child {
+    margin-bottom: 0;
+}
+
+/* последняя колонка другая (с кнопкой и ссылкой), поэтому к ней применила доп свойства */
+.footer__col--special {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__button {
+    background: #18A0FB;
+    border-radius: 6px;
+    padding: 15.3px 51.78px 15.7px 51.22px;
+    margin: 24px 0px;
+    transition: all 1.3s;
+    white-space: nowrap;
+    transform: translateY(-90%);
+    max-width: 192px;
+}
+
+.footer__button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.footer__btn {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.footer__icons {
+    display: flex;
+    margin-bottom: 70px;
+    transform: translateY(-50%);
+}
+
+.footer__icons-item {
+    margin-right: 31px;
+}
+
+/* иконки соц сетей увеличиваются при наведении */
+.footer__icons-item:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.footer__icons-item:last-child {
+    margin-right: 0;
+}
+
+/* ====================================MEDIA========================================= */
+/* ====================================1500========================================= */
+
+@media (max-width: 1500px) {
+    .header__logo span {
+        margin-right: 443px;
+        white-space: nowrap;
+    }
+
+    .tour__title, .tour__desc {
+        font-size: 24px;
+    }
+
+    .tour__par, .tour__text, .tour__icon-text, .tour__form-label {
+        font-size: 16px;
+    }
+
+    .tour__par, .tour__line {
+        margin-right: 30px;
+    }
+
+    .tour__par {
+        max-width: 500px;
+    }
+
+    .tour__form-cols {
+        justify-content: flex-start;
+    }
+
+    .tour__form-col, .tour__form-col:last-child {
+        margin-right: 30px;
+    }
+
+    .tour__form-input {
+        max-width: 230px;
+    }
+
+    .tour__form-input--date {
+        max-width: 230px;
+    }
+
+    .tour__form-text {
+        max-width: 284px;
+    }
+
+    .tour__right {
+        justify-content: space-between;
+    }
+
+}
+
+/* ====================================1400========================================= */
+
+@media (max-width: 1400px) {
+    .header__logo span {
+        margin-right: 380px;
+    }
+}
+
+/* ====================================1300========================================= */
+
+@media (max-width: 1300px) {
+
+    .header__logo span {
+        margin-right: 300px;
+    }
+
+    .header__inner, .tour__inner, .footer__text {
+        padding: 0px 60px;
+    }
+
+    .footer__col:nth-child(4) {
+        margin-right: 100px;
+    }
+
+}
+
+/* ====================================1250========================================= */
+
+@media (max-width: 1250px) {
+    .header__logo span {
+        margin-right: 260px;
+    }
+
+    .tour__icons {
+        margin-bottom: 0;
+    }
+
+}
+
+/* ====================================1150========================================= */
+
+@media (max-width: 1150px) {
+    .header__logo span {
+        margin-right: 170px;
+    }
+
+    .header__inner, .tour__inner, .footer__text {
+        padding: 0px 30px;
+    }
+
+    .tour__par {
+        margin-right: 10px;
+    }
+
+    .tour__icon-photo svg {
+        width: 35px;
+    }
+
+    .footer__col:first-child, .footer__col:nth-child(2), .footer__col:nth-child(3), .footer__col:nth-child(4) {
+        margin-right: 15px;
+    }
+
+    .tour__form-input {
+        max-width: 190px;
+    }
+
+    .tour__form-input--date {
+        max-width: 190px;
+    }
+
+    .tour__form-text {
+        max-width: 244px;
+    }
+}
+
+/* ====================================1050========================================= */
+
+@media (max-width: 1050px) {
+    .header__logo span {
+        margin-right: 130px;
+    }
+
+    .tour__title, .tour__desc {
+        font-size: 21px;
+    }
+
+    .tour__par, .tour__text, .tour__icon-text, .tour__form-label {
+        font-size: 14px;
+    }
+}
+
+/* ====================================1000========================================= */
+
+@media (max-width: 1000px) {
+    .tour__block {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .tour__line {
+        display: none;
+    }
+
+    .tour__form-cols {
+        justify-content: flex-start;
+    }
+
+    .tour__form-col:first-child {
+        margin-right: 76px;
+    }
+
+    .tour__form-input {
+        margin-top: 14px;
+    }
+
+    .tour__line-rotate {
+        display: block;
+        margin: 52px 0px 41px;
+    }
+
+    .tour__form-input {
+        max-width: 288px;
+    }
+
+    .tour__form-input--date {
+        max-width: 259px;
+    }
+
+    .tour__form-text {
+        max-width: 344px;
+        height: 164px;
+        margin-top: 14px;
+    }
+
+    .tour__form-label:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour__btn {
+        margin-top: 33.2px;
+        padding: 10.12px 10.62px 9.68px 9.38px;
+        font-size: 14px;
+        line-height: 17.12px;
+        max-width: 120px;
+    }
+
+    .tour__icons {
+        margin-bottom: 35px;
+        justify-content: space-around;
+        align-items: end;
+    }
+
+    .tour__icon-photo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .tour__line {
+        transform: rotate(90deg);
+    }
+
+    .tour__text {
+        max-width: none;
+    }
+
+    .tour__par {
+        display: block;
+        max-width: 100%;
+        margin: 0px 0px 43px;
+    }
+    .footer__heading, .footer__btn {
+        font-size: 17px;
+    }
+    .footer__button {
+        text-align: center;
+        justify-self: center;
+        padding: 10.12px 10.62px 9.68px 9.38px;
+        line-height: 17.12px;
+        max-width: 120px;
+    }
+}
+
+/* ====================================950========================================= */
+
+@media (max-width: 950px) {
+
+    .header__logo span {
+        margin-right: 121px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__nav-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 26px;
+    }
+
+    .header__nav-item:last-child {
+        margin-right: 26px;
+    }
+
+    .header__button {
+        padding: 8.5px 16.45px 10.05px 15.55px;
+        margin: 17px 0px 17.45px;
+        transition: all 1.3s;
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .header__btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+    .footer__heading, .footer__btn {
+        font-size: 14px;
+    }
+
+    .footer__icons-item {
+        margin-right: 10px;
+    }
+
+    .footer__icons-link svg {
+        width: 35px;
+    }
+}
+
+/* ====================================850========================================= */
+
+@media (max-width: 850px) {}
+
+/* ====================================768========================================= */
+
+@media (max-width: 768px) {
+
+    .header__logo span {
+        margin-right: 121px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__nav-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 26px;
+    }
+
+    .header__nav-item:last-child {
+        margin-right: 26px;
+    }
+
+    .header__button {
+        padding: 8.5px 16.45px 10.05px 15.55px;
+        margin: 17px 0px 17.45px;
+        transition: all 1.3s;
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .header__btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .tour__inner {
+        margin: 40px 0px 83.2px;
+    }
+
+    .tour__heading {
+        font-size: 22px;
+    }
+
+    .tour__text, .tour__par {
+        max-width: 705px;
+    }
+
+    .tour__form-input--date::after {
+        width: 25px;
+        right: 16px;
+    }
+
+    .footer__inner {
+        margin-top: 0;
+    }
+
+}
+
+/* ====================================750========================================= */
+
+@media (max-width: 750px) {
+    .header__inner, .tour__inner, .footer__text {
+        padding: 0 16px;
+    }
+
+    .header__logo span {
+        margin-right: 50px;
+    }
+
+    .tour__form-col:first-child {
+        margin-right: 30px;
+    }
+
+    .footer__text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__col:first-child, .footer__col:nth-child(2), .footer__col:nth-child(3), .footer__col:nth-child(4) {
+        display: none;
+    }
+
+    .footer__button {
+        margin: 0px auto;
+        width: 120px;
+    }
+
+    .footer__icons-item {
+        margin-right: 31px;
+    }
+
+    .footer__icons {
+        margin-bottom: 0;
+    }
+}
+
+/* ====================================700========================================= */
+@media (max-width: 700px) {
+    .tour__form-input, .tour__form-input--date {
+        max-width: 250px;
+    }
+}
+
+/* ====================================660========================================= */
+
+@media (max-width: 660px) {
+    .header {
+        position: relative;
+    }
+
+    .header__logo-special {
+        display: block;
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 21px;
+        margin: 19.5px auto 19.5px 16px;
+        white-space: nowrap;
+    }
+
+    .burger {
+        /* position: fixed; */
+        position: absolute;
+        top: -19px;
+        right: 0;
+        z-index: 300;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+    }
+
+    .burger--follow {
+        top: 15px;
+        right: 15px;
+        box-shadow: 0 1px 8px #a1a1a1;
+        background-color: #FFFFFF;
+    }
+
+    .burger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        z-index: 150;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        z-index: 150;
+    }
+
+    .header__burger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #FFFFFF;
+        transition: all 0.3s;
+        min-width: 320px;
+        transform: translateX(100%);
+        transition: all 0.7s;
+        z-index: 100;
+    }
+
+    .header__burger--open {
+        transform: translateX(0%);
+    }
+
+    .header__inner {
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .header__logo span {
+        margin: 90px auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .header__nav-item {
+        padding: 20px 0px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .header__nav-item:last-child {
+        margin-right: 0;
+    }
+    .tour__inner {
+        margin-top: 52px;
+    }
+    .tour__heading {
+        font-size: 16px;
+    }
+    .tour__form-cols {
+        flex-direction: column;
+    }
+    .tour__form-col:first-child {
+        margin-bottom: 27px;
+    }
+    .tour__form-label:last-child {
+        margin-bottom: 27px;
+    }
+    .tour__form-input {
+        width: 358px;
+        max-width: none;
+    }
+
+    .tour__form-input--date {
+        width: 274px;
+        max-width: none;
+    }
+    .tour__form-text {
+        max-width: 358px;
+        width: 358px;
+    }
+    .tour__form-input--date::after {
+        left: 300px;
+    }
+    .tour__form-label:last-child {
+        margin-bottom: 0;
+    }
+    .tour__btn {
+        margin-top: 56px;
+    }
+}
+
+/* ====================================600========================================= */
+@media (max-width: 600px) {
+    .tour_heading {
+        font-size: 16px;
+        margin-bottom: 56px;
+    }
+
+    .tour__title, .tour__desc {
+        font-size: 15px;
+    }
+
+    .tour__par, .tour__text, .tour__icon-text {
+        font-size: 12px;
+    }
+    .footer__button {
+        height: 38.91px;
+    }
+    .footer__icons-item svg {
+        width: 30px;
+    }
+}
+
+/* ====================================500========================================= */
+
+@media (max-width: 500px) {
+    .tour__icon-photo svg {
+        width: 30px;
+    }
+}
+/* ====================================380========================================= */
+@media (max-width: 380px) {
+    .tour__form-input--date::after {
+        left: 250px;
+    }
+}
